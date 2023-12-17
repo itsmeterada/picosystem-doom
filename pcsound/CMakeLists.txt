@@ -1,0 +1,5 @@
+if (PICO_SDK)
+  add_library(pcsound INTERFACE)
+else()
+  message(SEND_ERROR "Only rp2040 is supported. (pcsound subdir)")
+endif()

@@ -1,0 +1,5 @@
+if (PICO_SDK)
+  add_library(textscreen INTERFACE)
+else()
+  message(SEND_ERROR "Only rp2040 is supported. (textscreen subdir)")
+endif()
